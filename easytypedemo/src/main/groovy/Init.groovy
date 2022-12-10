@@ -9,8 +9,8 @@ LOG.info("Registering mode converted for EasyItem")
 defaultConverterRegistry.registerModelConverter("EasyItem", EasyItemModel.class, null)
 LOG.info("Registered mode converted for EasyITem")
 
-def easyTypesRegistry = spring.getBean("easyTypesRegistry")
+//def easyTypesRegistry = spring.getBean("easyTypesRegistry")
 
-easyTypesRegistry.registerClass("com.sap.cx.boosters.easy.extension.easytypedemo.model.EasyItemModel", EasyItemModel.class)
+//easyTypesRegistry.registerClass("com.sap.cx.boosters.easy.extension.easytypedemo.model.EasyItemModel", EasyItemModel.class)
 
 LOG.info("Init completed for easytype demo")
