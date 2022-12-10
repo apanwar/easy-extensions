@@ -2,6 +2,7 @@ package com.sap.cx.boosters.easy.extension.easytypedemo.model
 
 import de.hybris.bootstrap.annotations.Accessor
 import de.hybris.platform.core.model.ItemModel
+import de.hybris.platform.servicelayer.model.ItemModelContext
 
 class EasyItemModel extends ItemModel {
     public static final String _TYPECODE = "EasyItem"
