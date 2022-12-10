@@ -1,0 +1,2 @@
+INSERT_UPDATE EasyItem;code[unique=true]; name[lang=en]
+;test-easy-item ; Test Easy Item

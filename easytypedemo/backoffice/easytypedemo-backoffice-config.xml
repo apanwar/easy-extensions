@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns="http://www.hybris.com/cockpit/config">
+
+    <context type="EasyItem">
+
+        <context merge-by="type" component="explorer-tree">
+            <n:explorer-tree xmlns:n="http://www.hybris.com/cockpitng/config/explorertree">
+                <n:navigation-node id="easy_extensions_demo" merge-mode="append">
+                    <n:type-node id="easy_item" code="EasyItem"/>
+                </n:navigation-node>
+            </n:explorer-tree>
+        </context>
+
+        <context component="base" merge-by="type" parent="GenericItem">
+            <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+                <y:labels>
+                    <y:label>(name?:'') + '[' + code + ']'</y:label>
+                </y:labels>
+            </y:base>
+        </context>
+
+        <context component="listview" merge-by="type">
+            <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/components/listview">
+                <list-view:column qualifier="code" position="1"/>
+                <list-view:column qualifier="name" position="2"/>
+            </list-view>
+        </context>
+
+        <context component="editor-area" merge-by="type">
+            <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/components/editorArea">
+                <editorArea:tab name="hmc.tab.common" merge-mode="append">
+                    <editorArea:section name="hmc.properties" merge-mode="append">
+                        <editorArea:attribute qualifier="code"/>
+                        <editorArea:attribute qualifier="name"/>
+                    </editorArea:section>
+                </editorArea:tab>
+            </editorArea:editorArea>
+        </context>
+    </context>
+
+</config>

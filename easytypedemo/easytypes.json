@@ -1,0 +1,63 @@
+{
+    "itemtypes" : [
+        {
+            "code" : "EasyItem",
+            "name" : [
+                {
+                    "lang" : "en",
+                    "value" : "Easy Item"
+                }
+            ],
+            "autocreate" : "true",
+            "generate" : "true",
+            "deployment" : {
+                "table" : "easyitems",
+                "typecode" : "25000"
+            },
+            "attributes": [
+                {
+                    "qualifier" : "code",
+                    "type" : "java.lang.String",
+                    "name" : [
+                        {
+                            "lang" : "en",
+                            "value": "Code"
+                        }
+                    ],
+                    "persistence" : {
+                        "type" : "property",
+                        "column" : "p_code"
+                    },
+                    "modifiers" : {
+                        "unique" : "true",
+                        "initial" : "true",
+                        "optional" : "false",
+                        "write" : "false",
+                        "partof" : "false"
+                    }
+                },
+                {
+                    "qualifier" : "name",
+                    "type" : "localized:java.lang.String",
+                    "name" : [
+                        {
+                            "lang" : "en",
+                            "value": "Name"
+                        }
+                    ],
+                    "persistence" : {
+                        "type" : "property",
+                        "column" : "p_name"
+                    },
+                    "modifiers" : {
+                        "unique" : "false",
+                        "initial" : "false",
+                        "optional" : "true",
+                        "write" : "true",
+                        "partof" : "false"
+                    }
+                }
+            ]
+        }
+    ]
+}
