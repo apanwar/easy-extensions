@@ -74,6 +74,13 @@
                     "persistence" : {
                         "type" : "property",
                         "column" : "p_testAttribute"
+                    },
+                    "modifiers" : {
+                        "unique" : "false",
+                        "initial" : "false",
+                        "optional" : "true",
+                        "write" : "true",
+                        "partof" : "false"
                     }
                 }
             ]
