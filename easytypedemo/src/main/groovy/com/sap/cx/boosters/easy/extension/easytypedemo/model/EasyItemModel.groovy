@@ -44,5 +44,17 @@ class EasyItemModel extends ItemModel {
 	{
 		return getPersistenceContext().getLocalizedValue(NAME, loc);
 	}
+
+    @Accessor(qualifier = "name", type = Accessor.Type.SETTER)
+	public void setName(final String value)
+	{
+		setName(value,null);
+	}
+
+	@Accessor(qualifier = "name", type = Accessor.Type.SETTER)
+	public void setName(final String value, final Locale loc)
+	{
+		getPersistenceContext().setLocalizedValue(NAME, loc, value);
+	}
 	
 }
