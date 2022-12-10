@@ -21,7 +21,7 @@
         </context>
 
         <context component="listview" merge-by="type">
-            <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/components/listview">
+            <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/components/listView">
                 <list-view:column qualifier="code" position="1"/>
                 <list-view:column qualifier="name" position="2"/>
             </list-view:list-view>
