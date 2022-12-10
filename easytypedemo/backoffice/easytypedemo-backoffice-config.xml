@@ -24,7 +24,7 @@
             <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/components/listview">
                 <list-view:column qualifier="code" position="1"/>
                 <list-view:column qualifier="name" position="2"/>
-            </list-view>
+            </list-view:list-view>
         </context>
 
         <context component="editor-area" merge-by="type">
