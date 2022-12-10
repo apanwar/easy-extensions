@@ -21,14 +21,14 @@
         </context>
 
         <context component="listview" merge-by="type">
-            <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/components/listView">
+            <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
                 <list-view:column qualifier="code" position="1"/>
                 <list-view:column qualifier="name" position="2"/>
             </list-view:list-view>
         </context>
 
         <context component="editor-area" merge-by="type">
-            <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/components/editorArea">
+            <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
                 <editorArea:tab name="hmc.tab.common" merge-mode="append">
                     <editorArea:section name="hmc.properties" merge-mode="append">
                         <editorArea:attribute qualifier="code"/>
