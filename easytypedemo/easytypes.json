@@ -58,6 +58,25 @@
                     }
                 }
             ]
+        },
+        {
+            "code" : "Customer",
+            "attributes" : [
+                {
+                    "qualifier" : "testAttribute",
+                    "type" : "java.lang.String",
+                    "name" : [
+                        {
+                            "lang" : "en",
+                            "value" : "Test Attribute"
+                        }
+                    ],
+                    "persistence" : {
+                        "type" : "property",
+                        "column" : "p_testAttribute"
+                    }
+                }
+            ]
         }
     ]
 }
