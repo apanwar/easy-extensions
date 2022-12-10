@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns="http://www.hybris.com/cockpit/config">
+
+    <context type="Customer">
+
+        <context component="editor-area" merge-by="type">
+            <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+                <editorArea:tab name="hmc.tab.common" merge-mode="append">
+                    <editorArea:section name="hmc.properties" merge-mode="append">
+                        <editorArea:attribute qualifier="testAttribute"/>
+                    </editorArea:section>
+                </editorArea:tab>
+            </editorArea:editorArea>
+        </context>
+    </context>
+
+</config>
